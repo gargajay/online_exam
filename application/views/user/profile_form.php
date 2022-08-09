@@ -118,12 +118,16 @@
                      </div>
                   </div>
 
-                  <!-- <div class="row">
+                  <div class="row">
                     <div class="form-group col-12 <?php echo form_error('front_upload_image') ? ' has-error' : ''; ?>">
-                      <?php echo form_label(lang('are_you_a_tutor').' ?', 'tutor_request', array('class'=>'control-label')); ?><br/>
-                      <?php echo form_checkbox(array('name'=>'tutor_request','class'=>'','value' => '1')); ?>
+                      <?php 
+                     //  echo form_label(lang('are_you_a_tutor').' ?', 'tutor_request', array('class'=>'control-label'));
+                       ?>
+                      <?php
+                     //   echo form_checkbox(array('name'=>'tutor_request','class'=>'','value' => '1'));
+                        ?>
                     </div>
-                  </div> -->
+                  </div>
 
 
                   
