@@ -11,7 +11,6 @@ class Admin_login_Controller extends Private_login_Controller
         // $this->add_js_theme('api.js');
     }
 
-
     
     function login() 
     {
@@ -28,8 +27,6 @@ class Admin_login_Controller extends Private_login_Controller
                 redirect(base_url());
             }
         }
-
-        
 
         // set form validation rules
         $this->form_validation->set_error_delimiters($this->config->item('error_delimeter_left'), $this->config->item('error_delimeter_right'));
