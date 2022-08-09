@@ -29,6 +29,8 @@ class Admin_login_Controller extends Private_login_Controller
             }
         }
 
+        
+
         // set form validation rules
         $this->form_validation->set_error_delimiters($this->config->item('error_delimeter_left'), $this->config->item('error_delimeter_right'));
         $this->form_validation->set_rules('username', 'Username', 'required|trim|max_length[256]');
