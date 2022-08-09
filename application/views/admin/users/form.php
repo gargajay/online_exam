@@ -187,7 +187,7 @@
                   <div class="form-group col-sm-12 mb-3<?php echo form_error('user_image') ? ' has-error' : ''; ?>">
                      <?php echo form_label(lang('admin_upload_image'), 'user_image', array('class'=>'control-label')); ?>
                      <span class="required">*</span>
-                     <!-- <?php echo form_upload(array('name'=>'user_image','class'=>'form-control')); ?> -->
+                     <?php echo form_upload(array('name'=>'user_image','class'=>'form-control')); ?>
                      <?php 
                      if(!empty($user['id']) && isset($user['id'])) 
                      {
