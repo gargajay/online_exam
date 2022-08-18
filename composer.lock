@@ -1,0 +1,95 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "0c3a87e03c1874df9af1ba49b1ef701e",
+    "packages": [
+        {
+            "name": "codeigniter/framework",
+            "version": "3.1.13",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bcit-ci/CodeIgniter.git",
+                "reference": "bcb17eb8ba53a85de154439d0ab8ff1bed047bc9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bcit-ci/CodeIgniter/zipball/bcb17eb8ba53a85de154439d0ab8ff1bed047bc9",
+                "reference": "bcb17eb8ba53a85de154439d0ab8ff1bed047bc9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.7"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "1.6.*",
+                "phpunit/phpunit": "4.* || 5.* || 9.*"
+            },
+            "suggest": {
+                "paragonie/random_compat": "Provides better randomness in PHP 5.x"
+            },
+            "type": "project",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "The CodeIgniter framework",
+            "homepage": "https://codeigniter.com",
+            "time": "2022-03-03T13:21:49+00:00"
+        },
+        {
+            "name": "transfuse/codeigniter-restserver",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/transfuse/codeigniter-restserver.git",
+                "reference": "96fb7b81822eae6d882c2f6caa3c9a06ff985bbe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/transfuse/codeigniter-restserver/zipball/96fb7b81822eae6d882c2f6caa3c9a06ff985bbe",
+                "reference": "96fb7b81822eae6d882c2f6caa3c9a06ff985bbe",
+                "shasum": ""
+            },
+            "require": {
+                "codeigniter/framework": "^3.0.4",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "libraries/Format.php",
+                    "libraries/REST_Controller.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Transfuse Inc.",
+                    "email": "hello@transfuseinc.com"
+                }
+            ],
+            "description": "A fully RESTful server implementation for CodeIgniter 2 and 3 using one library, one config file and one controller.",
+            "homepage": "https://github.com/transfuse/codeigniter-restserver",
+            "keywords": [
+                "codeigniter",
+                "restserver"
+            ],
+            "time": "2016-03-24T02:26:01+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}

@@ -308,77 +308,7 @@
                                  </a>
                               </li>
 
-                              <li class="<?php echo (uri_string() == 'admin/users/tutor') ? 'active' : ''; ?>"><a href="<?php echo base_url('/admin/users/tutor'); ?>" class="nav-link"><?php echo lang('tutor_requests'); ?></a>
-                              </li>
-
-                              <li class="<?php echo (uri_string() == 'admin/users/backup') ? 'active' : ''; ?>">
-                                 <a href="<?php echo base_url('admin/users/backup'); ?>" class="nav-link"><?php echo lang('backups'); ?> 
-                                 </a>
-                              </li>
-
-                              <li class="<?php echo (uri_string() == 'admin/payment') ? 'active' : ''; ?>">
-                                 <a href="<?php echo base_url('admin/payment'); ?>" class="nav-link"><?php echo lang('payment_list'); ?> 
-                                 </a>
-                              </li>
-
-                              <li class="<?php echo (strstr(uri_string(), 'admin/membership')) ? 'active' : ''; ?>">
-                                 <a href="<?php echo base_url('admin/membership'); ?>" class="nav-link"><?php echo lang('membership_list'); ?> 
-                                 </a>
-                              </li>
-
-                           </ul>
-                        </li>
-
-                        <li class="dropdown<?php echo ((strstr(uri_string(), 'admin/settings/menu_item') OR uri_string() == 'admin/settings/menu_list') OR (strstr(uri_string(), 'admin/pages')) OR (strstr(uri_string(), 'admin/blog')) OR (strstr(uri_string(), 'admin/custom_fields')) OR (strstr(uri_string(), 'admin/testimonial')) OR (uri_string() == 'admin/footer') OR (uri_string() == 'admin/media') ) ? ' active' : ''; ?>">
-                           <a href="#" class="nav-link has-dropdown" data-toggle="dropdown">
-                              <i class="fas fa-palette"></i> <span><?php echo lang('CMS'); ?></span>
-                           </a>
-                           <ul class="dropdown-menu">
-                              <?php if($this->settings->file_uploader == 'media manager') { ?>
-                                 <li class="<?php echo (strstr(uri_string(), 'admin/media')) ? 'active' : ''; ?>">
-                                    <a href="<?php echo base_url('admin/media'); ?>" class="nav-link"> <?php echo lang('media'); ?> 
-                                    </a>
-                                 </li>
-                              <?php } ?>   
-                              <li class="<?php echo (strstr(uri_string(), 'admin/pages')) ? 'active' : ''; ?>">
-                                 <a href="<?php echo base_url('admin/pages'); ?>" class="nav-link"> <?php echo lang('pages'); ?> 
-                                 </a>
-                              </li>
-
-                              <li class="<?php echo ((uri_string() == 'admin/blog') OR (uri_string() == 'admin/blog/blog_category_form'))  ? 'active' : ''; ?>">
-                                 <a href="<?php echo base_url('admin/blog'); ?>" class="nav-link"> <?php echo lang('blog_category'); ?> 
-                                 </a>
-                              </li>
-
-                              <li class="<?php echo ((uri_string() == 'admin/blog/post') OR (uri_string() == 'admin/blog/blog_post_form')) ? 'active' : ''; ?>">
-                                 <a href="<?php echo base_url('admin/blog/post'); ?>" class="nav-link"> <?php echo lang('blog_post'); ?>
-                                 </a>
-                              </li>
-
-                              <li class="<?php echo ((uri_string() == 'admin/settings/menu_list') OR (uri_string() == 'admin/settings/menu_item')) ? 'active' : ''; ?>">
-                                 <a href="<?php echo base_url('/admin/settings/menu_list'); ?>" class="nav-link"><?php echo lang('front_menu_items'); ?>
-                                 </a>
-                              </li>
-
-                              <li class="<?php echo (strstr(uri_string(), 'admin/custom_fields')) ? 'active' : ''; ?>">
-                                 <a href="<?php echo base_url('admin/custom_fields'); ?>" class="nav-link"> <?php echo lang('custom_fields'); ?> 
-                                 </a>
-                              </li>
-
-                              <li class="<?php echo (strstr(uri_string(), 'admin/testimonial')) ? 'active' : ''; ?>">
-                                 <a href="<?php echo base_url('admin/testimonial'); ?>" class="nav-link"> <?php echo lang('testimonials'); ?>
-                                 </a>
-                              </li>
-                             
-
-                              <li class="<?php echo (uri_string() == 'admin/footer') ? 'active' : ''; ?>">
-                                 <a href="<?php echo base_url('/admin/footer'); ?>" class="nav-link">
-                                    <span><?php echo lang('footers_section'); ?></span>
-                                 </a>
-                              </li>
-
-                           </ul>
-                        </li>
+                              
 
 
 
@@ -442,62 +372,11 @@
                         </li>
 
 
-                        <li class="dropdown<?php echo (strstr(uri_string(), 'admin/language')) ? ' active' : ''; ?>">
-                           <a href="#" class="nav-link has-dropdown" data-toggle="dropdown">
-                              <i class="fas fa-language"></i>
-                              <span><?php echo lang('nav_language'); ?></span>
-                           </a>
-                           <ul class="dropdown-menu">
-                              <li class="<?php echo (uri_string() == 'admin/language') ? 'active' : ''; ?>">
-                                 <a href="<?php echo base_url('admin/language'); ?>" class="nav-link"><?php echo lang('language_list'); ?>
-                                 </a>
-                              </li>
-                              <li class="<?php echo (uri_string() == 'admin/language/add') ? 'active' : ''; ?>">
-                                 <a href="<?php echo base_url('admin/language/add'); ?>" class="nav-link"><?php echo lang('admin_add_language'); ?>
-                                 </a>
-                              </li>
-                              <li class="<?php echo (uri_string() == 'admin/language/add_token') ? 'active' : ''; ?>">
-                                 <a href="<?php echo base_url('admin/language/add_token'); ?>" class="nav-link"><?php echo lang('add_new_token') ?>
-                                 </a>
-                              </li>
-                           </ul>
-                        </li>
+                     
 
-                        <li class="dropdown<?php echo (strstr(uri_string(), 'admin/coupon')) ? ' active' : ''; ?>">
-                           <a href="#" class="nav-link has-dropdown" data-toggle="dropdown">
-                              <i class="fa fa-gift"></i>
-                              <span><?php echo lang('coupons'); ?></span>
-                           </a>
-                           <ul class="dropdown-menu">
-                              <li class="<?php echo (uri_string() == 'admin/coupon') ? 'active' : ''; ?>">
-                                 <a href="<?php echo base_url('admin/coupon'); ?>" class="nav-link"><?php echo lang('coupon_list'); ?>
-                                 </a>
-                              </li>
-                           </ul>      
-                        </li>
+                      
 
-
-                        <li class="<?php echo (uri_string() == 'admin/settings') ? 'active' : ''; ?>">
-                           <a href="<?php echo base_url('/admin/settings'); ?>" class="nav-link">
-                              <i class="fas fa-cog"></i>
-                              <span><?php echo lang('admin_settings'); ?></span>
-                           </a>
-                        </li>
-
-                        <li class="dropdown <?php echo (strstr(uri_string(), 'admin/db-backup-list')) ? ' active' : ''; ?>">
-                           <a href="<?php echo base_url('admin/db-backup-list'); ?>" class="nav-link">
-                              <i class="fas fa-database"></i>
-                              <span><?php echo lang('db_backup');?></span>
-                           </a>
-                        </li>
-
-
-                        <li class="dropdown<?php echo (strstr(uri_string(), 'admin/updates')) ? ' active' : ''; ?>">
-                           <a href="<?php echo base_url('admin/updates'); ?>" class="nav-link">
-                              <i class="fa fa-sync" aria-hidden="true"></i>
-                              <span><?php echo lang('Updates'); ?></span>
-                           </a>
-                        </li>  
+                      
 
                         <?php
                         }

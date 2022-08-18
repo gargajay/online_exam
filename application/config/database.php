@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'install_enter_hostname',
-	'username' => 'install_enter_db_username',
-	'password' => 'install_enter_db_password',
-	'database' => 'install_enter_database_name',
+	'hostname' => 'localhost',
+	'username' => 'u541334648_bcmelt',
+	'password' => 'Rjaytech@8337',
+	'database' => 'u541334648_bcmelt',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

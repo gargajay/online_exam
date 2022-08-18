@@ -68,53 +68,7 @@
       </div>
    </div>
 
-   <?php
-   if(is_loged_in_user_is_subadmin() == FALSE)
-   { ?>
-      <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-         <div class="card card-statistic-1">
-            <div class="card-icon bg-primary">
-               <i class="fas fa-file" aria-hidden="true"></i>
-            </div>
-            <div class="card-header">
-               <h4>
-                  <a  href="<?php echo base_url('admin/pages') ?>"><?php echo lang('dashboard_pages'); ?> (<?php echo xss_clean($pages->count); ?>) </a>
-               </h4>
-            </div>
-         </div>
-      </div>
-
-
-   <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-      <div class="card card-statistic-1">
-         <div class="card-icon bg-primary">
-            <i class="fas fa-newspaper"></i>
-         </div>
-         <div class="card-header">
-            <h4>
-               <a  href="<?php echo base_url('admin/blog/post') ?>"><?php echo lang('dashboard_blog_post'); ?>  (<?php echo xss_clean($blog_post->count); ?>) </a>
-            </h4>
-         </div>
-      </div>
-   </div>
-
-   <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-      <div class="card card-statistic-1">
-         <div class="card-icon bg-primary">
-            <i class="fas fa-hand-holding-usd"></i>
-         </div>
-         <div class="card-header">
-            <h4>
-               <a  href="<?php echo base_url('admin/payment') ?>"><?php echo lang('dashboard_payment'); ?>  (<?php echo xss_clean($payment_total->count); ?>) </a>
-                  <a href="javascript:void(0)" class="py-15"><?php echo lang('success'); ?>(<?php echo xss_clean($payment_total->price); ?>)</a>
-            </h4>
-         </div>
-      </div>
-   </div>
-
-
-         <?php 
-   } ?>
+ 
 
 
 </div>
