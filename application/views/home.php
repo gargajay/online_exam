@@ -42,14 +42,24 @@
               <ul class="list-group">
               
                 <li class="list-group-item active" style="background:#7F67BB;color:#FFFFFF;" aria-current="true"><?php echo xss_clean($category_array->category_title);?></li>
-           
+                <?php if(!empty(get_quiz_by_category($category_array->id))){ 
+                   $quizs = get_quiz_by_category($category_array->id);
+
+
+
                   
 
+                    foreach($quizs as $quiz){
+
+                      $quiz_url = base_url('/instruction/quiz/').$quiz->id;
+
+                  
+                  ?>
+
                  
-                <li class="list-group-item">Aptitude questions</li>
-                <li class="list-group-item">Reasoning Questions</li>
-                <li class="list-group-item">Verbal questions</li>
-                <li class="list-group-item">English Questions</li>
+                <li class="list-group-item"><a href="<?php echo $quiz_url  ?>"><?php  echo $quiz->title ?></a></li>
+               
+                <?php } } ?> 
               </ul>
             </div>
 
