@@ -674,6 +674,18 @@ function render_checkbox($name, $label, $options, $selected = [], $classes = '')
 }
 
 
+function get_quiz_by_category($category_id)
+{
+    $ci = & get_instance();
+    $ci->load->database();
+    $ci->load->model('HomeModel');
+    $ci->load->model('TestModel');
+    // get all quiz eit cat_id = $category_id
+    $quiz_data = $ci->HomeModel->get_category_quizes($category_id);
+
+    return $quiz_data;
+}
+
 function get_category_stars($category_id,$user_id)
 {
     $ci = & get_instance();

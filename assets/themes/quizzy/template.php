@@ -303,10 +303,10 @@ else
              <div class="container">
                <div class="navbar navbar-expand-lg">
                  <div class="col-6">
-                   <span class="text-white"><?php echo strip_tags(get_admin_setting('top_text_left'));?></span>
+                   <span class="text-white"><?php echo get_admin_setting('top_text_left');?></span>
                  </div>
                  <div class="col-6">
-                   <span class="text-white float-right"><?php echo strip_tags(get_admin_setting('top_text_right'));?></span>
+                   <span class="text-white float-right"><?php echo get_admin_setting('top_text_right');?></span>
                  </div>
                </div>
              </div> 
@@ -318,7 +318,7 @@ else
       <div class="container-fluid sticky_top bg-white">
         <div class="container">
           <div class="row header">
-            <div class="col-md-4 col-sm-12 col-xs-12">
+            <div class="col-md-5 col-sm-12 col-xs-12">
               <div class="row">
                 <div class="col-md-6 col-xl-6  col-6">
                     <a class="header-brand" href="<?php echo base_url()?>">
@@ -326,16 +326,20 @@ else
                     </a>
                 </div>
                 <div class="col-md-6 col-xl-6  col-6">
-                    <div id="dl-menu" class="dl-menuwrapper mt-2">
-                      <button class="dl-trigger"><?php echo lang('categories') ?></button>
-                        <?php get_categories_tree() ?>
-                    </div><!-- /dl-menuwrapper -->                
+                                 
                 </div>
               </div>
                 
             </div>
-            <div class="col-md-5 col-sm-12 col-xs-12 m-auto before_togle_menu_width">
+            <div class="col-md-4 col-sm-12 col-xs-12 m-auto before_togle_menu_width">
               <div class="row">
+
+                 <div id="" class="">
+                      <!-- <button class="dl-trigger"><?php echo lang('categories') ?></button>
+                        <?php get_categories_tree() ?> -->
+                        
+                        <p><a href=""  class="dl-trigger" >Bc</a> &nbsp; <a href=""  class="dl-trigger">Melt</a> &nbsp; <a href=""  class="dl-trigger">Faq</a> <p>
+                </div><!-- /dl-menuwrapper --> 
 
                 <div class="  col-xl-12 col-2 text-center display_on_mobile_only">
                   <button class="navbar-toggler mt-2" id="menu_togle_btn" type="button" data-toggle="collapse" data-target="#headerMenuCollapse" aria-controls="headerMenuCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -348,20 +352,20 @@ else
                   
                   <div class="row">
                     <div class="col-3 pr-0">
-                      <select name="header_search_type" class="serch_selection">
+                      <!-- <select name="header_search_type" class="serch_selection">
                         <option <?php echo ($this->uri->segment(1) == 'search' && $this->uri->segment(2) == 'quiz') ? 'selected' : ''; ?> value="quiz"><?php echo lang('quiz'); ?></option>
                         <option <?php echo ($this->uri->segment(1) == 'search' && $this->uri->segment(2) == 'study') ? 'selected' : ''; ?> value="study"><?php echo lang('study_material'); ?></option>
                         <option <?php echo ($this->uri->segment(1) == 'search' && $this->uri->segment(2) == 'category') ? 'selected' : ''; ?> value="category"><?php echo lang('Category'); ?></option>
                         <option <?php echo ($this->uri->segment(1) == 'search' && $this->uri->segment(2) == 'tutor') ? 'selected' : ''; ?> value="tutor"><?php echo lang('tutor'); ?></option>
-                      </select>                
+                      </select>                 -->
                     </div>
                     <div class="col-9 pl-0">
-                      <div class="input-group ">
+                      <!-- <div class="input-group ">
                         <input name="header_search_value" class="form-controll roundedd" type="text" name="search" value="<?php echo $this->input->get('query',true); ?>" id="serchbar" placeholder="<?php echo lang('search_items') ?>" aria-label="<?php echo lang('search_items') ?>" aria-describedby="header_serch_submit">
                         <div class="input-group-append search_box">
                           <button class="btn btn-outline-secondary" id="header_serch_submit" type="submit"><?php echo lang('Search'); ?></button>
                         </div>
-                      </div>
+                      </div> -->
                     </div>
                   </div>
 

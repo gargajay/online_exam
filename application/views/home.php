@@ -28,14 +28,8 @@
         }
         ?>
 
-        <div class="col-md-4 col-xl-4 col-xs-12 col-sm-6 category_data_section" >  
-          <div class="grid">
-            <figure class="effect-ming">
-              <img src="<?php echo xss_clean($category_image); ?>" alt="img09"/>
-              <figcaption>
-                
-
-                <?php 
+        
+            <?php 
                 $category_url = base_url('category/').$category_array->category_slug;
                 $category_class = "";
                 if($user_id > 0 && $difficulty_star) 
@@ -43,6 +37,34 @@
                   $category_url = "javascript:void(0)";
                   $category_class = "difficulty_level_model";
                 } ?>
+
+            <div class="col-md-4 col-xl-4 col-xs-12 col-sm-6 category_data_section pb-5 pt-5">
+              <ul class="list-group">
+              
+                <li class="list-group-item active" style="background:#7F67BB;color:#FFFFFF;" aria-current="true"><?php echo xss_clean($category_array->category_title);?></li>
+           
+                  
+
+                 
+                <li class="list-group-item">Aptitude questions</li>
+                <li class="list-group-item">Reasoning Questions</li>
+                <li class="list-group-item">Verbal questions</li>
+                <li class="list-group-item">English Questions</li>
+              </ul>
+            </div>
+
+
+        
+
+
+
+        <!-- <div class="col-md-4 col-xl-4 col-xs-12 col-sm-6 category_data_section" >  
+          <div class="grid">
+            <figure class="effect-ming">
+              <img src="<?php echo xss_clean($category_image); ?>" alt="img09"/>
+              <figcaption>
+                
+
 
                 
                 <a href="<?php echo $category_url; ?>" class="<?php echo $category_class; ?>" data-category_slug='<?php echo $category_array->category_slug; ?>'>&nbsp;</a>
@@ -70,7 +92,7 @@
               </figcaption>     
             </figure>
           </div>
-        </div>
+        </div> -->
 
         <?php 
         if($i == 6 OR $i > 6) { break;}
