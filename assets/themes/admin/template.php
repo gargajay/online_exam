@@ -308,7 +308,7 @@
                                  </a>
                               </li>
 
-                              <li class="<?php echo (uri_string() == 'admin/users/tutor') ? 'active' : ''; ?>"><a href="<?php echo base_url('/admin/users/tutor'); ?>" class="nav-link"><?php echo lang('tutor_requests'); ?></a>
+                              <!-- <li class="<?php echo (uri_string() == 'admin/users/tutor') ? 'active' : ''; ?>"><a href="<?php echo base_url('/admin/users/tutor'); ?>" class="nav-link"><?php echo lang('tutor_requests'); ?></a>
                               </li>
 
                               <li class="<?php echo (uri_string() == 'admin/users/backup') ? 'active' : ''; ?>">
@@ -324,12 +324,12 @@
                               <li class="<?php echo (strstr(uri_string(), 'admin/membership')) ? 'active' : ''; ?>">
                                  <a href="<?php echo base_url('admin/membership'); ?>" class="nav-link"><?php echo lang('membership_list'); ?> 
                                  </a>
-                              </li>
+                              </li> -->
 
                            </ul>
                         </li>
 
-                        <li class="dropdown<?php echo ((strstr(uri_string(), 'admin/settings/menu_item') OR uri_string() == 'admin/settings/menu_list') OR (strstr(uri_string(), 'admin/pages')) OR (strstr(uri_string(), 'admin/blog')) OR (strstr(uri_string(), 'admin/custom_fields')) OR (strstr(uri_string(), 'admin/testimonial')) OR (uri_string() == 'admin/footer') OR (uri_string() == 'admin/media') ) ? ' active' : ''; ?>">
+                        <!-- <li class="dropdown<?php echo ((strstr(uri_string(), 'admin/settings/menu_item') OR uri_string() == 'admin/settings/menu_list') OR (strstr(uri_string(), 'admin/pages')) OR (strstr(uri_string(), 'admin/blog')) OR (strstr(uri_string(), 'admin/custom_fields')) OR (strstr(uri_string(), 'admin/testimonial')) OR (uri_string() == 'admin/footer') OR (uri_string() == 'admin/media') ) ? ' active' : ''; ?>">
                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown">
                               <i class="fas fa-palette"></i> <span><?php echo lang('CMS'); ?></span>
                            </a>
@@ -378,12 +378,12 @@
                               </li>
 
                            </ul>
-                        </li>
+                        </li> -->
 
 
 
 
-                        <li class="dropdown<?php echo (strstr(uri_string(), 'admin/template') OR (uri_string() == 'admin/contact') OR (strstr(uri_string(), 'admin/advertisment')) OR (strstr(uri_string(), 'admin/sponsors')) ) ? ' active' : ''; ?>">
+                        <!-- <li class="dropdown<?php echo (strstr(uri_string(), 'admin/template') OR (uri_string() == 'admin/contact') OR (strstr(uri_string(), 'admin/advertisment')) OR (strstr(uri_string(), 'admin/sponsors')) ) ? ' active' : ''; ?>">
                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown">
                               <i class="fas fa-bullhorn"></i>
                               <span><?php echo lang('SEO/Marketing'); ?> </span>
@@ -418,13 +418,13 @@
                               </li>
 
                            </ul>
-                        </li>
+                        </li> -->
 
 
 
 
 
-                        <li class="dropdown<?php echo (strstr(uri_string(), 'admin/institution') OR strstr(uri_string(), 'admin/course')) ? ' active' : ''; ?>">
+                        <!-- <li class="dropdown<?php echo (strstr(uri_string(), 'admin/institution') OR strstr(uri_string(), 'admin/course')) ? ' active' : ''; ?>">
                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown">
                               <i class="fas fa-university"></i>
                               <span><?php echo lang('institutions'); ?> </span>
@@ -439,10 +439,10 @@
                                  </a>
                               </li>
                            </ul>
-                        </li>
+                        </li> -->
 
 
-                        <li class="dropdown<?php echo (strstr(uri_string(), 'admin/language')) ? ' active' : ''; ?>">
+                        <!-- <li class="dropdown<?php echo (strstr(uri_string(), 'admin/language')) ? ' active' : ''; ?>">
                            <a href="#" class="nav-link has-dropdown" data-toggle="dropdown">
                               <i class="fas fa-language"></i>
                               <span><?php echo lang('nav_language'); ?></span>
@@ -474,10 +474,10 @@
                                  </a>
                               </li>
                            </ul>      
-                        </li>
+                        </li> -->
 
 
-                        <li class="<?php echo (uri_string() == 'admin/settings') ? 'active' : ''; ?>">
+                        <!-- <li class="<?php echo (uri_string() == 'admin/settings') ? 'active' : ''; ?>">
                            <a href="<?php echo base_url('/admin/settings'); ?>" class="nav-link">
                               <i class="fas fa-cog"></i>
                               <span><?php echo lang('admin_settings'); ?></span>
@@ -497,7 +497,7 @@
                               <i class="fa fa-sync" aria-hidden="true"></i>
                               <span><?php echo lang('Updates'); ?></span>
                            </a>
-                        </li>  
+                        </li>   -->
 
                         <?php
                         }
