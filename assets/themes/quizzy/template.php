@@ -338,7 +338,7 @@ else
                       <!-- <button class="dl-trigger"><?php echo lang('categories') ?></button>
                         <?php get_categories_tree() ?> -->
                         
-                        <p><a href=""  class="dl-trigger" >Bc</a> &nbsp; <a href=""  class="dl-trigger">Melt</a> &nbsp; <a href=""  class="dl-trigger">Faq</a> <p>
+                        <p><a href=""  class="dl-trigger" >Bc</a> &nbsp; <a href=""  class="dl-trigger">Melt</a> &nbsp; <a href="<?php echo base_url('pages/contact')?>"  class="dl-trigger">Faq</a> <p>
                 </div><!-- /dl-menuwrapper --> 
 
                 <div class="  col-xl-12 col-2 text-center display_on_mobile_only">
